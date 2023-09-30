@@ -13,7 +13,7 @@ Simple::Simple(const wxString& title)
 
     // Create a button to add elements to the map
     wxButton* addButton = new wxButton(this, wxID_ANY, "Add Element",wxPoint(20,0));
-    wxButton* insertButton;
+    wxButton* insertButton = new wxButton(this, wxID_ANY, "Insert Element",wxPoint(20,100));
     
     listView = new wxListView(this, wxID_ANY, wxPoint(400, 10), wxDefaultSize, wxLC_REPORT);
     listView->AppendColumn("Key");
